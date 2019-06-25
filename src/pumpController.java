@@ -33,7 +33,9 @@ public class pumpController{
     sendSpeed.set(3, n1);
     sendSpeed.set(4, n2);
     sendSpeed.set(5, n3);
+
     mmc.writeToSerialPort(port, sendSpeed);
+
     print("setting speed for motor " + y + " to " + n1 + n2 + n3);
 
     return;
@@ -50,6 +52,7 @@ public class pumpController{
     sendRun.set(6, t3);
     sendRun.set(7, t4);
     sendRun.set(8, t5);
+
     print("Shield: " + x + ", Motor: " + y + ", direction: " + d + ", time: " + t1 + t2 + t3 + t4 + t5 + "s");
     mmc.writeToSerialPort(port, sendRun);
 
@@ -74,7 +77,9 @@ public class pumpController{
     //n is number of washes, t is time (in seconds) the buffer should sit in the chamber before getting cleared, v is the number of mL the wash should be
     int i = 0;
     int j = 0;
+
     for(i = 0; i < n; i++){
+
       print("Wash " + (i+1) + " of " + n);
       //clear chamber with perastaltic pump
       clearChamber();
