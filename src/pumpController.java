@@ -6,7 +6,7 @@ public class pumpController{
 
     public String port; //string of port name
     public String consoleLog; //name of log
-    private Writer log = null; //prealloaction of log
+    private BufferedWriter log = null; //prealloaction of log
     public CharVector sendSpeed = new CharVector(); //CharVector with speed setting control
     public CharVector sendRun = new CharVector(); //CharVector with motor running control
     private CMMCore core = new CMMCore();
@@ -15,7 +15,7 @@ public class pumpController{
     void createLog(){
 
         try{
-            log = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(consoleLog), "utf-8"));
+            BufferedWriter log = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(consoleLog), "utf-8"));
             log.write("Created log");
             System.out.println("Log created with name: " + consoleLog);
         }
