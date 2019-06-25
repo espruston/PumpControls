@@ -2,7 +2,7 @@ import java.io.*;
 import mmcorej.CharVector;
 import mmcorej.CMMCore;
 
-public class pumpController{
+public class pumps{
 
     public String port; //string of port name
     public String consoleLog; //name of log
@@ -15,7 +15,7 @@ public class pumpController{
     void createLog(){
 
         try{
-            BufferedWriter log = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(consoleLog), "utf-8"));
+            log = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(consoleLog), "utf-8"));
             log.write("Created log");
             System.out.println("Log created with name: " + consoleLog);
         }

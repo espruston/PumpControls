@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PumpControl.iml" filepath="$PROJECT_DIR$/PumpControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pumpController/pumpController.iml" filepath="$PROJECT_DIR$/pumpController/pumpController.iml" />
     </modules>
   </component>
 </project>
