@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Micro-Manager">
+    <CLASSES>
+      <root url="file://C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager" recursive="false" />
+    <jarDirectory url="file://C:/Program Files/Micro-Manager-1.4/plugins/Micro-Manager" recursive="false" type="SOURCES" />
+  </library>
+</component>

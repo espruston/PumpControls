@@ -1,0 +1,214 @@
+//Fixation Protocol for GM130 Labeling
+//Program will only run if FreeSerialPort is included in your hardware configuration
+import mmcorej.CharVector;
+gui.clearMessageWindow(); 
+
+port = "COM3"; //edit for your port
+print("Running on port: " + port);
+
+void speed(CharVector vec, char x, char y, char n1, char n2, char n3){
+	
+	vec.set(1, x);
+	vec.set(2, y);
+	vec.set(3, n1);
+	vec.set(4, n2);
+	vec.set(5, n3);
+	mmc.writeToSerialPort(port, vec);
+	print("setting speed for motor " + vec.get(2) + " to " + vec.get(3) + vec.get(4) + vec.get(5));
+		
+	return;
+	
+}
+
+void run(CharVector vec, char x, char y, char d, char t1, char t2, char t3, char t4, char t5){
+	
+	vec.set(1, x);
+	vec.set(2, y);
+	vec.set(3, d);
+	vec.set(4, t1);
+	vec.set(5, t2);
+	vec.set(6, t3);
+	vec.set(7, t4);
+	vec.set(8, t5);
+	print("Shield: " + vec.get(1) + ", Motor: " + vec.get(2) + ", direction: " + vec.get(3) + ", time: " + vec.get(4) + vec.get(5) + vec.get(6) + vec.get(7) + vec.get(8) + "s");
+	mmc.writeToSerialPort(port, vec);
+
+	int T1 = Character.getNumericValue(t1);
+	int T2 = Character.getNumericValue(t2);
+	int T3 = Character.getNumericValue(t3);
+	int T4 = Character.getNumericValue(t4);
+	int T5 = Character.getNumericValue(t5);
+	
+	Thread.sleep(T1*10000000+T2*1000000+T3*100000+T4*10000+T5*1000+500); //wait until the pump has finished to call the next command
+	
+	return;
+	
+}
+
+void clearChamber(CharVector vec){
+	print("Clearing Chamber");
+	run(vec, '2', '3', '2', '0', '0', '0', '1', '2'); //12s
+}
+
+void wash(CharVector vec, int n, int t, int v){
+	//vec should be runMotor, n is number of washes, t is time (in seconds) the buffer should sit in the chamber before getting cleared, v is the number of mL the wash should be
+	int i = 0;
+	int j = 0;
+	for(i = 0; i < n; i++){
+		print("Wash " + (i+1) + " of " + n);
+		//clear chamber with perastaltic pump
+		clearChamber(vec);
+		//infuse buffer PBS
+		print("Infusing " + v + "mL of buffer");
+		for(j = 0; j < v; j++){
+			run(vec, '1', '4', '1', '0', '0', '0', '2', '4'); //TODO: Change time for test
+		}
+		print("Waiting " + t + " seconds before clearing chamber");
+		Thread.sleep(t*1000);
+		//clear chamber with perastaltic pump
+		clearChamber(vec);
+		
+	};
+
+	return;
+	
+}
+
+void clearTube(CharVector vec, char color){
+	//The clearTube function insures that your desired solution is not diluted
+	//by first filling the tube, then clearing the chamber
+	if(color == 'b'){
+		run(vec, '1', '1', '1', '0', '0', '0', '2', '3'); //fill the tube from clear point to chamber with desired solution
+		clearChamber(vec);
+	}
+	if(color == 'c'){
+		run(vec, '1', '2', '1', '0', '0', '0', '2', '5'); //fill the tube from clear point to chamber with desired solution
+		clearChamber(vec); //clear solution from chamber
+	}
+	if(color == 'y'){
+		run(vec, '1', '3', '1', '0', '0', '0', '2', '7'); //fill the tube from yellow point to chamber with desired solution
+		clearChamber(vec);
+	}
+	if(color == 'g'){
+		run(vec, '1', '4', '1', '0', '0', '0', '1', '1'); //fill the tube from yellow point to chamber with desired solution
+		clearChamber(vec);
+	}
+	
+	return;
+	 
+}
+
+void pushBuffer(CharVector vec, char color){
+	if(color == 'b'){
+		run(vec, '1', '4', '1', '0', '0', '0', '0', '5'); //fill the tube from clear point to chamber with desired solution
+	}
+	if(color == 'c'){
+		run(vec, '1', '4', '1', '0', '0', '0', '0', '9'); //fill the tube from clear point to chamber with desired solution
+	}
+	if(color == 'y'){
+		run(vec, '1', '4', '1', '0', '0', '0', '1', '1'); //fill the tube from yellow point to chamber with desired solution
+	}
+	if(color == 'g'){
+		run(vec, '1', '4', '1', '0', '0', '0', '1', '4'); //fill the tube from green point to chamber with desired solution
+	}
+}
+
+CharVector createSpeed(){
+
+	CharVector setSpeed = new CharVector();
+
+	//Create message for setting motor speed
+	setSpeed.add('s'); //set setSpeed.set(0, c)
+	setSpeed.add('x'); //shield setSpeed.set(1, c)
+	setSpeed.add('y'); //motor setSpeed.set(2, c)
+	setSpeed.add('n'); //speed setSpeed.set(3, c)
+	setSpeed.add('n'); //speed setSpeed.set(4, c)
+	setSpeed.add('n'); //speed setSpeed.set(5, c)
+	setSpeed.add('\r'); //return/end message DO NOT EDIT
+
+	return(setSpeed);
+}
+
+CharVector createRun(){
+
+	CharVector runMotor = new CharVector();
+
+	//Create message for running motor
+	runMotor.add('r'); //run run.set(0, c)
+	runMotor.add('x'); //shield run.set(1, c)
+	runMotor.add('y'); //motor run.set(2, c)
+	runMotor.add('d'); //direction (1 FW, 2 BW) run.set(3, c)
+	runMotor.add('t'); //time run.set(4, c)
+	runMotor.add('t'); //time run.set(5, c)	
+	runMotor.add('t'); //time run.set(6, c)
+	runMotor.add('t'); //time run.set(7, c)
+	runMotor.add('t'); //time run.set(8, c)
+	runMotor.add('\r'); //return/end message DO NOT EDIT
+
+	return(runMotor);
+	
+}
+
+CharVector setSpeed = createSpeed();
+CharVector runMotor = createRun();
+print("messages initialized");
+	
+//create button that waits for user input to continue then dismisses itself
+boolean pressed = false;
+continueButton( message ){
+	JButton button = new JButton( "Continue" );
+	button.addActionListener( this );
+	JFrame frame = frame( button );
+	
+	actionPerformed( e ){
+		print( message );
+		pressed = true;
+		frame.setVisible(false);
+	}
+}
+
+//BEGIN PROTOCOL FROM POST PRIMARY ANTIBODY LABELING
+
+//wash 5x between antibody labelings
+pushBuffer(runMotor, 'g');
+wash(runMotor, 2, 120, 2); //wash 2 times, with 2mL, letting buffer sit for 2 mins before clearing chamber
+wash(runMotor, 3, 300, 2); //wash 3 times, with 2mL, letting buffer sit for 5 mins before clearing chamber
+
+//create button that waits for user input to continue
+print("Chamber has been cleared of primary antibody, prepare secondary antibody and press button when ready to clear chamber");
+continueButton("Continuing...");
+//wait for button to be pressed
+while(pressed == false){
+	Thread.sleep(1);
+}	
+pressed = false;
+
+clearChamber(runMotor);
+
+print("Chamber is clear, pipette your secondary antibody and press button when done to continue");
+continueButton("Secondary antibody pipetted, chamber will wash in 1 hour");
+//wait for button to be pressed
+while(pressed == false){
+	Thread.sleep(1);
+}	
+pressed = false;
+Thread.sleep(3600000); //wait 1 hr TODO: change this before test
+
+//wash 5x after secondary antibody labeling
+wash(runMotor, 2, 120, 2); //wash 2 times, with 2mL, letting buffer sit for 2 mins before clearing chamber
+wash(runMotor, 3, 300, 2); //wash 3 times, with 2mL, letting buffer sit for 5 mins before clearing chamber
+
+//post fix
+print("Post Fixing");
+clearTube(runMotor, 'c');
+run(runMotor, '1', '2', '1', '0', '0', '0', '4', '8'); //run 10mL pump for 48s to infuse 1mL TODO: change for test
+pushBuffer(runMotor, 'c');
+Thread.sleep(600000); //wait 10 mins (600 s = 600000 ms) TODO: change this before test
+
+clearChamber(runMotor);
+
+//fill chamber with buffer
+print("Infusing buffer");
+run(vec, '1', '4', '1', '0', '0', '0', '4', '8'); //TODO: Change time for test
+
+print("Sequence finished, target is fixed and labeled in buffer");
