@@ -10,15 +10,13 @@ import javax.swing.JOptionPane;
 //import org.micromanager.api.ScriptInterface;
 
 import org.micromanager.utils.ReportingUtils;
+import mmcorej.MMCoreJJNI;
 import mmcorej.CharVector;
 import mmcorej.CMMCore;
 
 public class Pumps{ //implements MMPlugin{
 
-    public static final String menuName = "Pumpy";
-    public static final String tooltipDescription = "" + "Run a custom acquistion using pumps!";
-
-    public String port = null; //string of port name
+    public String port; //string of port name
     public String portLabel = "SerialPort1"; //shorthand label for port
 
     public CharVector sendSpeed = new CharVector(); //CharVector with speed setting control
@@ -27,6 +25,10 @@ public class Pumps{ //implements MMPlugin{
     public String response = null; //response from serial port
 
     private CMMCore core = new CMMCore();
+
+    //legacy plugin definitions
+    //public static final String menuName = "Pumpy";
+    //public static final String tooltipDescription = "" + "Run a custom acquistion using pumps!";
     //private MMStudio gui = MMStudio.getInstance();
     //private MMStudio app = null;
     //private AcquisitionEngine acq = null;

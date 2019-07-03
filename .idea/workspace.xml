@@ -7,20 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dde2b8a-bc28-4db1-a431-e41aeff845ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MMCoreJ.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MMJ_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pumpControllerV1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pumpControllerV1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Micro_Manager.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pumpControllerV1_jar/pumpControllerV1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pumpControllerV1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pumpControllerV1/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pumpControllerV1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +26,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJJNI.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="1472" column="17" lean-forward="true" selection-start-line="1472" selection-start-column="17" selection-end-line="1472" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -57,7 +55,10 @@
       <find>V</find>
       <find>MMStudio</find>
       <find>acq</find>
+      <find>swig_mod</find>
+      <find>swig_module</find>
       <find>scriptInt</find>
+      <find>loadLibr</find>
     </findStrings>
     <replaceStrings>
       <replace>logMessage</replace>
@@ -80,9 +81,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="width" value="1950" />
+    <option name="width" value="1948" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
@@ -125,6 +126,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pumpController" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
+              <item name="MMCoreJ.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
+              <item name="MMCoreJ.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mmcorej" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -135,7 +158,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/nrjavaserial-3.13.0.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
@@ -174,6 +197,14 @@
       <option name="presentableId" value="Default" />
       <updated>1561482211887</updated>
     </task>
+    <task id="LOCAL-00001" summary="Reformatted to a class from plugin and added dependencies">
+      <created>1562172258319</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562172258319</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -186,10 +217,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="780" height="830" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22022161" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17169684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -212,6 +243,10 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reformatted to a class from plugin and added dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatted to a class from plugin and added dependencies" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -259,10 +294,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJ.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="189" column="5" lean-forward="true" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJJNI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1472" column="17" lean-forward="true" selection-start-line="1472" selection-start-column="17" selection-end-line="1472" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="391">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -280,7 +329,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
