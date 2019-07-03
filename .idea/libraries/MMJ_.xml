@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="MMJ_">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMJ_.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/commons-lang3-3.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/commons-net-3.3.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/imagej-1.47.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/jna-4.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/jna-platform-4.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/nrjavaserial-3.13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

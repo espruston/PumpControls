@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pumpController/pumpController.iml" filepath="$PROJECT_DIR$/pumpController/pumpController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" filepath="$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" />
     </modules>
   </component>
 </project>

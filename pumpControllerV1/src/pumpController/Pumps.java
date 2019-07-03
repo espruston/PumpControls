@@ -2,16 +2,20 @@ package pumpController;
 
 import ij.IJ;
 import java.io.*;
-import org.micromanager.api.MMPlugin;
-import org.micromanager.MMStudio;
-import org.micromanager.api.ScriptInterface;
+import javax.swing.JOptionPane;
+
+//import org.micromanager.acquisition.AcquisitionEngine;
+//import org.micromanager.api.MMPlugin;
+//import org.micromanager.MMStudio;
+//import org.micromanager.api.ScriptInterface;
+
 import org.micromanager.utils.ReportingUtils;
 import mmcorej.CharVector;
 import mmcorej.CMMCore;
 
-public class Pumps implements MMPlugin{
+public class Pumps{ //implements MMPlugin{
 
-    public static final String menuName = "Run pump & acquisition protocol";
+    public static final String menuName = "Pumpy";
     public static final String tooltipDescription = "" + "Run a custom acquistion using pumps!";
 
     public String port = null; //string of port name
@@ -23,8 +27,9 @@ public class Pumps implements MMPlugin{
     public String response = null; //response from serial port
 
     private CMMCore core = new CMMCore();
-
-    private MMStudio app = null;
+    //private MMStudio gui = MMStudio.getInstance();
+    //private MMStudio app = null;
+    //private AcquisitionEngine acq = null;
 
     //constructor
     public Pumps(String portName){
@@ -32,23 +37,27 @@ public class Pumps implements MMPlugin{
         this.port = portName;
     }
 
+    //REFORMATTED AS CLASS from plugin
+    /*
     @Override
     public void setApp(ScriptInterface app){
 
         this.app = (MMStudio) app;
         core = app.getMMCore();
+        acq = gui.getAcquisitionEngine();
+
     }
 
     @Override
     public void dispose(){
-
-        this.port = null;
+        //do nothing
     }
 
     //TODO: Implement call to bsh file in show(), maybe open corelog
     @Override
     public void show(){
-
+        JOptionPane.showMessageDialog(null, "Running file.txt", "Running...",
+                JOptionPane.PLAIN_MESSAGE);
         return;
     }
 
@@ -75,6 +84,7 @@ public class Pumps implements MMPlugin{
 
         return "Free use for all :)";
     }
+     */
 
     // LOGS NOW SAVED IN CORELOGS.TXT IN C:\Program Files\Micro-Manager-1.4\CoreLogs
 
