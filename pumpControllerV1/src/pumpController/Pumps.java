@@ -25,7 +25,6 @@ public class Pumps{ //implements MMPlugin{
     public Pumps(String portName){
 
         this.port = portName;
-        ReportingUtils.setCore(core);
     }
 
     // LOGS NOW SAVED IN CORELOGS.TXT IN C:\Program Files\Micro-Manager-1.4\CoreLogs
