@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dde2b8a-bc28-4db1-a431-e41aeff845ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pumpControllerV1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" afterDir="false" />
@@ -26,20 +25,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJJNI.class">
+        <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMJ_.jar!/org/micromanager/utils/ReportingUtils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="1472" column="17" lean-forward="true" selection-start-line="1472" selection-start-column="17" selection-end-line="1472" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +56,8 @@
       <find>acq</find>
       <find>swig_mod</find>
       <find>swig_module</find>
-      <find>scriptInt</find>
       <find>loadLibr</find>
+      <find>scriptInt</find>
     </findStrings>
     <replaceStrings>
       <replace>logMessage</replace>
@@ -83,8 +82,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="width" value="1948" />
-    <option name="height" value="2075" />
+    <option name="width" value="1640" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -129,24 +128,6 @@
             <path>
               <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
-              <item name="MMCoreJ.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="MMCoreJ" type="70bed36:NamedLibraryElementNode" />
-              <item name="MMCoreJ.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="mmcorej" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,13 +289,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
+    <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMJ_.jar!/org/micromanager/utils/ReportingUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="255">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>

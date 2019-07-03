@@ -4,11 +4,6 @@ import ij.IJ;
 import java.io.*;
 import javax.swing.JOptionPane;
 
-//import org.micromanager.acquisition.AcquisitionEngine;
-//import org.micromanager.api.MMPlugin;
-//import org.micromanager.MMStudio;
-//import org.micromanager.api.ScriptInterface;
-
 import org.micromanager.utils.ReportingUtils;
 import mmcorej.MMCoreJJNI;
 import mmcorej.CharVector;
@@ -26,67 +21,12 @@ public class Pumps{ //implements MMPlugin{
 
     private CMMCore core = new CMMCore();
 
-    //legacy plugin definitions
-    //public static final String menuName = "Pumpy";
-    //public static final String tooltipDescription = "" + "Run a custom acquistion using pumps!";
-    //private MMStudio gui = MMStudio.getInstance();
-    //private MMStudio app = null;
-    //private AcquisitionEngine acq = null;
-
     //constructor
     public Pumps(String portName){
 
         this.port = portName;
+        ReportingUtils.setCore(core);
     }
-
-    //REFORMATTED AS CLASS from plugin
-    /*
-    @Override
-    public void setApp(ScriptInterface app){
-
-        this.app = (MMStudio) app;
-        core = app.getMMCore();
-        acq = gui.getAcquisitionEngine();
-
-    }
-
-    @Override
-    public void dispose(){
-        //do nothing
-    }
-
-    //TODO: Implement call to bsh file in show(), maybe open corelog
-    @Override
-    public void show(){
-        JOptionPane.showMessageDialog(null, "Running file.txt", "Running...",
-                JOptionPane.PLAIN_MESSAGE);
-        return;
-    }
-
-    @Override
-    public String getDescription(){
-
-        return "Plugin that runs a pumpy protocol";
-    }
-
-    @Override
-    public String getInfo() {
-        //TODO: indicate location of beanshell call
-        return "This plugin calls the beanshell file located in %TODO%";
-    }
-
-    @Override
-    public String getVersion(){
-
-        return "1";
-    }
-
-    @Override
-    public String getCopyright(){
-
-        return "Free use for all :)";
-    }
-     */
 
     // LOGS NOW SAVED IN CORELOGS.TXT IN C:\Program Files\Micro-Manager-1.4\CoreLogs
 
@@ -299,7 +239,8 @@ public class Pumps{ //implements MMPlugin{
     //Initialize procedures
     public void startup(){
 
-        //createLog(); //create the log
+        ReportingUtils.logMessage("Initializing... ");
+
         connect();
         makeSpeed(); //make speed vector
         makeRun(); //make run vector
