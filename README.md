@@ -5,21 +5,23 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 ### Installation instructions:
 
-* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/MicroManager-1.4)
+* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/MicroManager-1.4).
 
 * Install pumpControllerV1.jar under MicroManager-1.4/jre/lib/ext
 
-* [Set up freeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in hardware configuration
+* If MicroManager is open during installation, you will need to close and re-open it for the changes to take effect.
 
-* Open micromanager script panel under "Tools>Script Panel"
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in MicroManager hardware configuration under "Tools>Hardware Configuration Wizard.
 
-* Use "import pumpController.Pumps;" at the top of your script
+* Open micromanager script panel under "Tools>Script Panel".
 
-* Find serial port label under windows devices menu (Printers & Devices should recognize any serial ports that are in use)
+* Use "import pumpController.Pumps;" at the top of your script.
 
-* Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);"
+* Find serial port label under windows "Bluetooth and other devices" menu.
 
-* Call any commands using "objectName.command();"
+* Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
+
+* Call any commands using "objectName.command();".
 
 ### Command list:
 
