@@ -16,6 +16,7 @@ public class Pumps{ //implements MMPlugin{
 
     public CharVector sendSpeed = new CharVector(); //CharVector with speed setting control
     public CharVector sendRun = new CharVector(); //CharVector with motor running control
+    public CharVector g = new CharVector();
 
     public String response = null; //response from serial port
 
@@ -78,6 +79,7 @@ public class Pumps{ //implements MMPlugin{
 
         try {
             response = core.getSerialPortAnswer(port, "\n");
+            ReportingUtils.logMessage(response);
         } catch (Exception e) {
             ReportingUtils.logError(e);
             e.printStackTrace();
@@ -246,6 +248,7 @@ public class Pumps{ //implements MMPlugin{
         makeSpeed(); //make speed vector
         makeRun(); //make run vector
         setAllFull(); //set all motors to full speed
+        runMotor('1', '1', '1', '0', '0', '0', '0', '1');
 
         return;
     }
