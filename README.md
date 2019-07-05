@@ -1,20 +1,20 @@
 # PumpControls
-Interfacing pumpy with micromanager and scope
+Interfacing pumpy with Micro-Manager and scope
 
 We designed this class to be beanshell script friendly at the cost of some user friendly options such as a GUI. Much of the code and hardware for this project was developed from concepts found in [NanoJ-Fluidics](https://github.com/HenriquesLab/NanoJ-Fluidics/wiki).
 
 ### Installation instructions:
-#### MicroManager-1.4:
+#### Micro-Manager-1.4:
 
-* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/MicroManager-1.4).
+* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/Micro-Manager-1.4).
 
-* Install pumpControllerV1.jar under MicroManager-1.4/plugins/Micro-Manager
+* Install pumpControllerV1.jar under Micro-Manager-1.4/plugins/Micro-Manager
 
-* If MicroManager is open during installation, you will need to close and re-open it for the changes to take effect.
+* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
-* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in MicroManager hardware configuration under "Tools>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
 
-* Open micromanager script panel under "Tools>Script Panel".
+* Open Micro-Manager script panel under "Tools>Script Panel".
 
 * Use "import pumpController.Pumps;" at the top of your script.
 
@@ -24,17 +24,17 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * Call any commands using "objectName.command();".
 
-#### MicroManager-2.0gamma:
+#### Micro-Manager-2.0gamma:
 
-* Navigate to your MicroManger-2.0ganma install location (something like C:/Program Files/MicroManager-2.0gamma).
+* Navigate to your MicroManger-2.0ganma install location (something like C:/Program Files/Micro-Manager-2.0gamma).
 
-* Install pumpControllerV2.jar under MicroManager-2.0gamma/plugins/Micro-Manager
+* Install pumpControllerV2.jar under Micro-Manager-2.0gamma/plugins/Micro-Manager
 
-* If MicroManager is open during installation, you will need to close and re-open it for the changes to take effect.
+* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
-* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in MicroManager hardware configuration under "Devices>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Devices>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
 
-* Open micromanager script panel under "Tools>Script Panel".
+* Open Micro-Manager script panel under "Tools>Script Panel".
 
 * Use "import pumpController.Pumps;" at the top of your script.
 
@@ -117,9 +117,9 @@ Initializes vector used to set motor speeds. Is called by startup(). Should alwa
 
 #### Notes:
 
-* pumpController is currently not formatted as a plugin for MicroManager. It is important not to install the .jar into the mmplugins folder as it will break your MicroManager GUI.
+* pumpController is currently not formatted as a plugin for Micro-Manager. It is important not to install the .jar into the mmplugins folder as it will break your Micro-Manager GUI.
 
-* All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in MicroManager-1.4/CoreLogs. This should make debugging much easier for developers.
+* All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in Micro-Manager-1.4/CoreLogs. This should make debugging much easier for developers.
 
 * For simplicity, the motor and shield values are hard-coded for our group's hardware configuration as of 7/5/2019. Our configuration is four geared pumps on shield 1 and two perastaltic pumps on shield 2 (motors 3 and 4). We infuse buffer using shield 2, motor 4 and clear waste using shield 2, motor 3. 
   * These values are hard coded in Pumps.java. To reformat for your pump setup, simply clone the directory, change the values in clearChamber and wash to your corresponding shield and motor values then recompile the project .jar file and reinstall in the manner described above. It should further be noted that if reformatting perastaltic pumps, the direction may also be flipped to meet the design of the hardware.
