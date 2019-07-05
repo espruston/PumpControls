@@ -26,10 +26,14 @@ startup();
 ```
 Connects to serialPort, sets all motors to 100% speed
 
+___
+
 ```
 setSpeed(char Shield, char Motor, char n1, char n2, char n3); 
 ```
 Sets speed of Motor on Shield to n1n2n3
+
+___
 
 ```
 runMotor(char Shield, char Motor, char Direction, char t1, char t2, char t3, chat t4, char t5); 
@@ -37,8 +41,50 @@ runMotor(char Shield, char Motor, char Direction, char t1, char t2, char t3, cha
 
 Runs Motor on Shield in Direction for t1t2t3t4t5 seconds
 
+___
+
 ```
 wash(int numberOfWashes, int bufferSitTime, int washVolume); 
 ```
 
-washes the chamber a specified number of times with the sepcified ammount of mL sitting in the chamber for the specified ammount of time;
+Washes the chamber a specified number of times with the sepcified ammount of mL sitting in the chamber for the specified ammount of time.
+
+___
+
+```
+clearChamber();
+```
+
+Clears any fluid remaining in the chamber.
+
+___
+
+```
+setAllFull();
+```
+
+Sets all motors to full speed. Is called by startup();
+
+___
+
+```
+connect();
+```
+
+Connects to serial port. Is called by startup().
+
+___
+
+```
+makeRun();
+```
+
+Initializes vector used to run motors. Is called by startup(). Should always be called before first call to runMotor().
+
+___
+
+```
+makeSpeed
+```
+
+Initializes vector used to set motor speeds. Is called by startup(). Should always be called before first call to setSpeed().
