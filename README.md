@@ -15,7 +15,7 @@ Interfacing pumpy with micromanager and scope
 
 * Find serial port label under windows devices menu (Printers & Devices should recognize any serial ports that are in use)
 
-* Create the pump object using "Pumps objectName = new Pumps(String portLabel);"
+* Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);"
 
 * Call any commands using "objectName.command();"
 
