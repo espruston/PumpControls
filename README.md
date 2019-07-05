@@ -1,6 +1,8 @@
 # PumpControls
 Interfacing pumpy with micromanager and scope
 
+We designed this class to be beanshell script friendly at the cost of some user friendly options such as a GUI. Much of the code and hardware for this project was developed from concepts found in [NanoJ-Fluidics](https://github.com/HenriquesLab/NanoJ-Fluidics/wiki).
+
 ### Installation instructions:
 
 * Navigate to your MicroManger-1.4 install location (something like C:/Program Files/MicroManager-1.4)
@@ -94,3 +96,6 @@ Initializes vector used to set motor speeds. Is called by startup(). Should alwa
 * pumpControllerV1 is currently not formatted as a plugin for MicroManager. It is important not to install the .jar into the mmplugins folder as it will break your MicroManager GUI.
 
 * All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in MicroManager-1.4/CoreLogs. This should make debugging much easier for developers.
+
+* For simplicity, the motor and shield values are hard-coded for our group's hardware configuration as of 7/5/2019. Our configuration is four geared pumps on shield 1 and two perastaltic pumps on shield 2 (motors 3 and 4). We infuse buffer using shield 2, motor 4 and clear waste using shield 2, motor 3. 
+  * These values are hard coded in Pumps.java. To reformat for your pump setup, simply clone the directory, change the values in clearChamber and wash to your corresponding shield and motor values then recompile the project .jar file and reinstall in the manner described above. It should further be noted that if reformatting perastaltic pumps, the direction may also be flipped to meet the design of the hardware.
