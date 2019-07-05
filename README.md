@@ -8,11 +8,13 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * Navigate to your MicroManger-1.4 install location (something like C:/Program Files/Micro-Manager-1.4).
 
-* Install pumpControllerV1.jar under Micro-Manager-1.4/plugins/Micro-Manager
+* Install [pumpControllerV1.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV1.jar) under Micro-Manager-1.4/plugins/Micro-Manager
 
 * If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
-* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
+
+![The port label is located under the value tab](C:\Users\espru\Documents\Work\Kennedy Lab\PAINT\CodeStuff\PortName.png)
 
 * Open Micro-Manager script panel under "Tools>Script Panel".
 
@@ -26,13 +28,15 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 #### Micro-Manager-2.0gamma:
 
-* Navigate to your MicroManger-2.0ganma install location (something like C:/Program Files/Micro-Manager-2.0gamma).
+* Navigate to your MicroManger-2.0gamma install location (something like C:/Program Files/Micro-Manager-2.0gamma).
 
-* Install pumpControllerV2.jar under Micro-Manager-2.0gamma/plugins/Micro-Manager
+* Install [pumpControllerV2.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV2.jar) under Micro-Manager-2.0gamma/plugins/Micro-Manager
 
 * If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
-* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Devices>Hardware Configuration Wizard. (You will need to restart Micro-Manager in order for hardware configuration changes to take effect).
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Devices>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
+
+![The port label is located under the value tab](C:\Users\espru\Documents\Work\Kennedy Lab\PAINT\CodeStuff\PortName2.png)
 
 * Open Micro-Manager script panel under "Tools>Script Panel".
 
