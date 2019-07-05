@@ -88,3 +88,9 @@ makeSpeed
 ```
 
 Initializes vector used to set motor speeds. Is called by startup(). Should always be called before first call to setSpeed().
+
+#### Notes:
+
+* pumpControllerV1 is currently not formatted as a plugin for MicroManager. It is important not to install the .jar into the mmplugins folder as it will break your MicroManager GUI.
+
+* All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in MicroManager-1.4/CoreLogs. This should make debugging much easier for developers.
