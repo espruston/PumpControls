@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dde2b8a-bc28-4db1-a431-e41aeff845ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pumpControllerV1/pumpController/Pumps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pumpControllerV2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pumpControllerV2/pumpControllerV2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pumpControllerV2/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pumpControllerV2/src/pumpController/Pumps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="9" column="23" selection-end-line="255" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pumpControllerV2/src/pumpController/Pumps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,6 +50,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -49,6 +71,8 @@
       <find>swig_module</find>
       <find>loadLibr</find>
       <find>scriptInt</find>
+      <find>swig_module_init</find>
+      <find>logLibrary</find>
     </findStrings>
     <replaceStrings>
       <replace>logMessage</replace>
@@ -68,12 +92,13 @@
         <option value="$PROJECT_DIR$/pumpController/src/pumps.java" />
         <option value="$PROJECT_DIR$/pumpControllerV1/src/pumps.java" />
         <option value="$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java" />
+        <option value="$PROJECT_DIR$/pumpControllerV2/src/pumpController/Pumps.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1905" />
-    <option name="width" value="1948" />
+    <option name="width" value="1950" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
@@ -81,22 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PumpControl" type="58d84e3e:PackageViewProjectNode" />
-              <item name="pumpControllerV1" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="58d84e3e:PackageViewProjectNode" />
-              <item name="pumpControllerV1" type="616d4139:PackageViewModuleNode" />
-              <item name="pumpController" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -118,7 +127,34 @@
             </path>
             <path>
               <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pumpController" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PumpControl" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pumpControllerV1" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="PumpControl" type="58d84e3e:PackageViewProjectNode" />
+              <item name="pumpControllerV1" type="616d4139:PackageViewModuleNode" />
+              <item name="pumpController" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -129,9 +165,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/nrjavaserial-3.13.0.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="last_opened_file_path" value="C:/Program Files/Micro-Manager-2.0gamma/ij.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15530303" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
@@ -189,10 +225,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="779" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="762" y="0" width="780" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24687934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26177284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -273,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJJNI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1472" column="17" lean-forward="true" selection-start-line="1472" selection-start-column="17" selection-end-line="1472" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMJ_.jar!/org/micromanager/utils/ReportingUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -290,10 +318,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar!/mmcorej/MMCoreJJNI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pumpControllerV1/src/pumpController/Pumps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="9" column="23" selection-end-line="255" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pumpControllerV2/src/pumpController/Pumps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -306,11 +351,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>pumpControllerV1:jar</last-edited>
+          <last-edited>pumpControllerV2:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -353,11 +399,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>pumpControllerV1</last-edited>
+          <last-edited>pumpControllerV2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pumpControllerV2:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="pumpControllerV2.jar">
+      <element id="module-output" name="pumpControllerV2" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMJ_.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/commons-lang3-3.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/commons-net-3.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/imagej-1.47.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/jna-4.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/jna-platform-4.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/nrjavaserial-3.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Micro-Manager-1.4/ij.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Work/Kennedy Lab/PAINT/NanoJ-Fluidics-1.2.6/Libraries/MMCoreJ.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
