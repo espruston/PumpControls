@@ -12,7 +12,7 @@ import mmcorej.CMMCore;
 public class Pumps{ //implements MMPlugin{
 
     public String port; //string of port name
-    public String portLabel = "SerialPort1"; //shorthand label for port
+    public String portLabel = null; //shorthand label for port
 
     public CharVector sendSpeed = new CharVector(); //CharVector with speed setting control
     public CharVector sendRun = new CharVector(); //CharVector with motor running control
@@ -33,6 +33,7 @@ public class Pumps{ //implements MMPlugin{
 
         ReportingUtils.logMessage("Connecting to port: " + port);
 
+        portLabel = port;
         try {
             core.loadDevice(portLabel, "SerialManager", port);
         } catch (Exception e) {
@@ -41,7 +42,7 @@ public class Pumps{ //implements MMPlugin{
         }
 
         try {
-            core.setProperty(portLabel, "StopBits", "1");
+            core.setProperty(portLabel, "StopBits", "2");
         } catch (Exception e) {
             ReportingUtils.logError(e);
             e.printStackTrace();
@@ -60,6 +61,14 @@ public class Pumps{ //implements MMPlugin{
             ReportingUtils.logError(e);
             e.printStackTrace();
         }
+
+        try {
+            core.initializeDevice(portLabel);
+        } catch (Exception e) {
+            ReportingUtils.logError(e);
+            e.printStackTrace();
+        }
+
         try {
             core.setSerialPortCommand(port, "", "\r");
         } catch (Exception e) {
@@ -68,14 +77,7 @@ public class Pumps{ //implements MMPlugin{
         }
 
         try {
-            response = core.getSerialPortAnswer(port, "\r");
-        } catch (Exception e) {
-            ReportingUtils.logError(e);
-            e.printStackTrace();
-        }
-
-        try {
-            core.initializeDevice(portLabel);
+            response = core.getSerialPortAnswer(port, "\n");
         } catch (Exception e) {
             ReportingUtils.logError(e);
             e.printStackTrace();
@@ -215,7 +217,7 @@ public class Pumps{ //implements MMPlugin{
             ReportingUtils.logMessage("Infusing " + v + "mL of buffer");
 
             for(j = 0; j < v; j++){ //run once for each number of mL in your wash step
-                runMotor('1', '4', '1', '0', '0', '0', '2', '4'); //infuse 1 mL of buffer (~24s on our motor)
+                runMotor('2', '4', '1', '0', '0', '0', '1', '2'); //infuse 1 mL of buffer (~24s on our motor)
             }
 
             ReportingUtils.logMessage("Waiting " + t + " seconds before clearing chamber");
