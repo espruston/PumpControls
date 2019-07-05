@@ -63,7 +63,7 @@ ___
 setAllFull();
 ```
 
-Sets all motors to full speed. Is called by startup();
+Sets all motors to full speed. Is called by startup().
 
 ___
 
