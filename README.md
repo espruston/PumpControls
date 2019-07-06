@@ -6,11 +6,21 @@ We designed this class to be beanshell script friendly at the cost of some user 
 ### Installation instructions:
 #### Micro-Manager-2.0gamma:
 
+* Install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+* Install [Adafruit MotorShield V2 library](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software).
+
+* Download [DCPumpController.ino](https://github.com/espruston/PumpControls/tree/master/DCPumpController).
+
+* Open DCPumpController.ino and edit the value of nShields to match your hardware set up.
+
+* Upload DCPumpController.ino to your Arduino.
+
 * Navigate to your MicroManger-2.0gamma install location (something like C:/Program Files/Micro-Manager-2.0gamma).
 
 * Install [pumpControllerV2.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV2.jar) under Micro-Manager-2.0gamma/plugins/Micro-Manager
 
-* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
+ * If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
 * [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Devices>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
 
@@ -20,18 +30,26 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * Use "import pumpController.Pumps;" at the top of your script.
 
-* Find serial port label under windows "Bluetooth and other devices" menu.
-
 * Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
 
 * Call any commands using "objectName.command();".
 #### Micro-Manager-1.4:
 
+* Install [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+* Install [Adafruit MotorShield V2 library](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/install-software).
+
+* Download [DCPumpController.ino](https://github.com/espruston/PumpControls/tree/master/DCPumpController).
+
+* Open DCPumpController.ino and edit the value of nShields to match your hardware set up.
+
+* Upload DCPumpController.ino to your Arduino.
+
 * Navigate to your MicroManger-1.4 install location (something like C:/Program Files/Micro-Manager-1.4).
 
 * Install [pumpControllerV1.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV1.jar) under Micro-Manager-1.4/plugins/Micro-Manager
 
-* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
+ * If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
 
 * [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
 
