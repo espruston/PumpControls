@@ -14,7 +14,8 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
 
-![The port label is located under the value tab](PortName.png)
+<img src="PortName.png" width="350" height="350">
+
 * Open Micro-Manager script panel under "Tools>Script Panel".
 
 * Use "import pumpController.Pumps;" at the top of your script.
@@ -35,7 +36,7 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Devices>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
 
-![The port label is located under the value tab](PortName2.png)
+<img src="PortName.png" width="350" height="350">
 
 * Open Micro-Manager script panel under "Tools>Script Panel".
 
