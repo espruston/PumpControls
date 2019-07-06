@@ -4,26 +4,6 @@ Interfacing pumpy with Micro-Manager and scope
 We designed this class to be beanshell script friendly at the cost of some user friendly options such as a GUI. Much of the code and hardware for this project was developed from concepts found in [NanoJ-Fluidics](https://github.com/HenriquesLab/NanoJ-Fluidics/wiki).
 
 ### Installation instructions:
-#### Micro-Manager-1.4:
-
-* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/Micro-Manager-1.4).
-
-* Install [pumpControllerV1.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV1.jar) under Micro-Manager-1.4/plugins/Micro-Manager
-
-* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
-
-* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
-
-<img src="PortName.png" width="350" height="350">
-
-* Open Micro-Manager script panel under "Tools>Script Panel".
-
-* Use "import pumpController.Pumps;" at the top of your script.
-
-* Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
-
-* Call any commands using "objectName.command();".
-
 #### Micro-Manager-2.0gamma:
 
 * Navigate to your MicroManger-2.0gamma install location (something like C:/Program Files/Micro-Manager-2.0gamma).
@@ -45,7 +25,25 @@ We designed this class to be beanshell script friendly at the cost of some user 
 * Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
 
 * Call any commands using "objectName.command();".
+#### Micro-Manager-1.4:
 
+* Navigate to your MicroManger-1.4 install location (something like C:/Program Files/Micro-Manager-1.4).
+
+* Install [pumpControllerV1.jar](https://github.com/espruston/PumpControls/blob/master/pumpControllerV1.jar) under Micro-Manager-1.4/plugins/Micro-Manager
+
+* If Micro-Manager is open during installation, you will need to close and re-open it for the changes to take effect.
+
+* [Set up FreeSerialPort](https://micro-manager.org/wiki/FreeSerialPort) in Micro-Manager hardware configuration under "Tools>Hardware Configuration Wizard. While you're here, take note of the port label (shown in the picture below). You will need to restart Micro-Manager in order for hardware configuration changes to take effect.
+
+<img src="PortName.png" width="350" height="350">
+
+* Open Micro-Manager script panel under "Tools>Script Panel".
+
+* Use "import pumpController.Pumps;" at the top of your script.
+
+* Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
+
+* Call any commands using "objectName.command();".
 
 ### Command list:
 
