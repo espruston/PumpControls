@@ -139,7 +139,11 @@ Initializes vector used to set motor speeds. Is called by startup(). Should alwa
 
 * All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in Micro-Manager-1.4/CoreLogs. This should make debugging much easier for developers.
 
-* When attempting to launch Micro-Manager after installing pumpControllerV2 you may be told you need to update ImageJ. In order to do so, do not use the suggested "Help>Update ImageJ", instead follow the instructions [HERE](https://imagej.nih.gov/ij/plugins/updater/).
+* When attempting to launch Micro-Manager after installing pumpControllerV2 you may be told you need to update ImageJ. In order to do so, do not use the suggested "Help>Update ImageJ", instead follow the instructions [here](https://imagej.nih.gov/ij/plugins/updater/).
 
 * For simplicity, the motor and shield values are hard-coded for our group's hardware configuration as of 7/5/2019. Our configuration is four geared pumps on shield 1 and two perastaltic pumps on shield 2 (motors 3 and 4). We infuse buffer using shield 2, motor 4 and clear waste using shield 2, motor 3. 
   * These values are hard coded in Pumps.java. To reformat for your pump setup, simply clone the directory, change the values in clearChamber and wash to your corresponding shield and motor values then recompile the project .jar file and reinstall in the manner described above. It should further be noted that if reformatting perastaltic pumps, the direction may also be flipped to meet the design of the hardware.
+
+* For optimum compatiblility, pumpControllerV1.jar should be compiled with [Java SE Development Kit 6u31](https://www.oracle.com/technetwork/java/javase/java-archive-downloads-javase6-419409.html).
+
+* For optimum compatibility, pumpControllerV2.jar should be compiled with [Java SE Development Kit 8u152](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html).
