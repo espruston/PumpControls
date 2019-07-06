@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dde2b8a-bc28-4db1-a431-e41aeff845ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pumpControllerV2/pumpController/Pumps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pumpControllerV2/pumpController/Pumps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV1/pumpControllerV1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pumpControllerV2/pumpControllerV2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pumpControllerV2/pumpControllerV2.iml" afterDir="false" />
-    </list>
+    <list default="true" id="6dde2b8a-bc28-4db1-a431-e41aeff845ab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +89,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1905" />
-    <option name="width" value="1950" />
-    <option name="height" value="2075" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3873" />
+    <option name="height" value="2093" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -144,26 +138,6 @@
             <path>
               <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
               <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pumpControllerV2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pumpController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PumpControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="ij.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,10 +208,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="780" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27839336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13480885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -408,7 +381,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>pumpControllerV2</last-edited>
+          <last-edited>pumpControllerV1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
