@@ -20,8 +20,6 @@ We designed this class to be beanshell script friendly at the cost of some user 
 
 * Use "import pumpController.Pumps;" at the top of your script.
 
-* Find serial port label under windows "Bluetooth and other devices" menu.
-
 * Create the Pumps object using "Pumps objectName = new Pumps(String portLabel);".
 
 * Call any commands using "objectName.command();".
