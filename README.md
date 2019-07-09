@@ -137,7 +137,7 @@ Initializes vector used to set motor speeds. Is called by startup(). Should alwa
 
 * pumpController is currently not formatted as a plugin for Micro-Manager. It is important not to install the .jar into the mmplugins folder as it will break your Micro-Manager GUI.
 
-* All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in Micro-Manager-1.4/CoreLogs. This should make debugging much easier for developers.
+* All calls to a method within the Pumps class will automatically log to your MicroManger CoreLog, located in Micro-Manager-1.4/CoreLogs or Micro-Manager-2.0gamma/CoreLogs. This should make debugging much easier for developers.
 
 * When attempting to launch Micro-Manager after installing pumpControllerV2 you may be told you need to update ImageJ. In order to do so, do not use the suggested "Help>Update ImageJ", instead follow the instructions [here](https://imagej.nih.gov/ij/plugins/updater/).
 
